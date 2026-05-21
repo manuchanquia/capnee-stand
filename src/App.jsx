@@ -134,11 +134,11 @@ function App() {
                   <ul className="list-unstyled fs-5 mt-3">
                     <li className="mb-3 d-flex align-items-center">
                       <BsEmojiWinkFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
-                      <span><strong className="text-capnee-purple">Guiño izquierdo:</strong> Ir al botón anterior.</span>
+                      <span><strong className="text-capnee-purple">Guiño derecho:</strong> Siguiente botón.</span>
                     </li>
                     <li className="mb-3 d-flex align-items-center">
-                      <BsEmojiWinkFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
-                      <span><strong className="text-capnee-purple">Guiño derecho:</strong> Siguiente botón.</span>
+                      <BsEmojiWinkFill size={28} className="text-secondary me-3 flex-shrink-0" style={{ transform: 'scaleX(-1)'}}/> 
+                      <span><strong className="text-capnee-purple">Guiño izquierdo:</strong> Ir al botón anterior.</span>
                     </li>
                     <li className="mb-3 d-flex align-items-center">
                       <BsEmojiSmileFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
