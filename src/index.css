@@ -1,0 +1,96 @@
+:root {
+  /* Paleta de colores oficial CAPNEE */
+  --capnee-btn-terciario: #FF647C;    /* Rosa/Salmón */
+  --capnee-btn-principal: #9055ED;    /* Morado (Active) */
+  --capnee-btn-inactivo: #BE9DF2;     /* Morado claro (Inactive) */
+  --capnee-btn-bloqueado: #A6A6A6;    /* Gris */
+  --capnee-bg-menu: #94E39D;          /* Verde fondo principal */
+  --capnee-bg-actividades: #82DAFE;   /* Celeste fondo actividades */
+  --capnee-bg-perfil: #FCEB78;        /* Amarillo fondo perfil */
+  --capnee-navbar: #FFFFFF;           /* Blanco */
+  
+  --capnee-text-dark: #333333;
+}
+
+/* Clases de fondo basadas en las pantallas */
+.bg-capnee-menu {
+  background-color: var(--capnee-bg-menu) !important;
+  color: var(--capnee-btn-principal); /* El texto morado resalta bien en el verde */
+}
+
+.bg-capnee-actividades {
+  background-color: var(--capnee-bg-actividades) !important;
+  color: var(--capnee-text-dark);
+}
+
+.bg-capnee-login {
+  background-color: var(--capnee-btn-principal) !important;
+  color: white;
+}
+
+/* Clases de texto */
+.text-capnee-purple {
+  color: var(--capnee-btn-principal) !important;
+}
+
+/* Estilos de botones de la app */
+.btn-capnee-primary {
+  background-color: var(--capnee-btn-principal);
+  color: white;
+  border: 2px solid #7a46c9 !important;;
+  border-radius: 12px; /* Botones más redondeados como en el diseño */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.btn-capnee-primary:hover {
+  background-color: #7a46c9; /* Un poco más oscuro al pasar el mouse */
+  color: white;
+  border-color: #000000;
+}
+
+.btn-capnee-bloqueado {
+  background-color: var(--capnee-btn-bloqueado);
+  color: white;
+  border: none;
+  border-radius: 12px;
+}
+
+/* --- Animación de rebote (Pop) para el cartel --- */
+@keyframes aparecerRebote {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.8);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px) scale(1.01); /* Se pasa un poquito de su tamaño y lugar */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Vuelve a su posición final */
+  }
+}
+
+.mensaje-animado {
+  /* Le damos más tiempo y usamos una curva de animación para que rebote */
+  animation: aparecerRebote 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-custom {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+}

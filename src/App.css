@@ -1,0 +1,18 @@
+/* src/App.css */
+
+/* Asegura que las imágenes de mockup o ejercicios no se desborden en mobile */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Forzar a que los textos dentro de las tarjetas con fondos personalizados mantengan buen contraste */
+.bg-capnee-actividades .card-custom {
+  background-color: #ffffff !important;
+  color: var(--capnee-text-dark) !important;
+}
+
+/* Evitar que Bootstrap rompa el scroll lateral en resoluciones chicas */
+body, html {
+  overflow-x: hidden;
+}
