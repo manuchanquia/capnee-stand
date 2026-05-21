@@ -131,17 +131,18 @@ function App() {
                   <p className="fs-5">
                     Permite resolver los ejercicios planteados contando con una opción de accesibilidad innovadora: su manejo a través de gestos faciales sin contacto físico.
                   </p>
-                 <ul className="list-unstyled fs-5 mt-3">
+                  <ul className="list-unstyled fs-5 mt-3">
                     <li className="mb-3 d-flex align-items-center">
-                      <BsEmojiWinkFill className="text-secondary fs-4 me-3" /> 
+                      {/* size={28} clava el tamaño, flex-shrink-0 evita que se aplaste */}
+                      <BsEmojiWinkFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
                       <span><strong className="text-capnee-purple">Guiño izquierdo:</strong> Volver a la pantalla anterior.</span>
                     </li>
                     <li className="mb-3 d-flex align-items-center">
-                      <BsEmojiWinkFill className="text-secondary fs-4 me-3" /> 
+                      <BsEmojiWinkFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
                       <span><strong className="text-capnee-purple">Guiño derecho:</strong> Siguiente botón.</span>
                     </li>
                     <li className="mb-2 d-flex align-items-center">
-                      <BsEmojiSmileFill className="text-secondary fs-4 me-3" /> 
+                      <BsEmojiSmileFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
                       <span><strong className="text-capnee-purple">Sonrisa:</strong> Presionar botón / Seleccionar.</span>
                     </li>
                   </ul>
