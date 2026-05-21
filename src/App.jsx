@@ -1,6 +1,6 @@
 import React, { useState } from 'react'; // Importamos useState para controlar el fallo de carga
 import { Navbar, Nav, Container, Row, Col, Card } from 'react-bootstrap';
-import { BsEmojiWinkFill, BsEmojiSmileFill, BsEnvelopeFill, BsInstagram, BsCheckCircleFill, BsExclamationCircleFill } from 'react-icons/bs';
+import { BsEmojiWinkFill, BsEmojiSmileFill, BsEmojiNeutralFill, BsEnvelopeFill, BsInstagram, BsCheckCircleFill, BsExclamationCircleFill } from 'react-icons/bs';
 import './App.css';
 
 function App() {
@@ -133,17 +133,20 @@ function App() {
                   </p>
                   <ul className="list-unstyled fs-5 mt-3">
                     <li className="mb-3 d-flex align-items-center">
-                      {/* size={28} clava el tamaño, flex-shrink-0 evita que se aplaste */}
                       <BsEmojiWinkFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
-                      <span><strong className="text-capnee-purple">Guiño izquierdo:</strong> Volver a la pantalla anterior.</span>
+                      <span><strong className="text-capnee-purple">Guiño izquierdo:</strong> Ir al botón anterior.</span>
                     </li>
                     <li className="mb-3 d-flex align-items-center">
                       <BsEmojiWinkFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
                       <span><strong className="text-capnee-purple">Guiño derecho:</strong> Siguiente botón.</span>
                     </li>
-                    <li className="mb-2 d-flex align-items-center">
+                    <li className="mb-3 d-flex align-items-center">
                       <BsEmojiSmileFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
                       <span><strong className="text-capnee-purple">Sonrisa:</strong> Presionar botón / Seleccionar.</span>
+                    </li>
+                    <li className="mb-2 d-flex align-items-center">
+                      <BsEmojiNeutralFill size={28} className="text-secondary me-3 flex-shrink-0" /> 
+                      <span><strong className="text-capnee-purple">Giro a la derecha:</strong> Volver a la pantalla anterior.</span>
                     </li>
                   </ul>
                 </Card.Body>
