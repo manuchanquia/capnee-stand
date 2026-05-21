@@ -94,3 +94,16 @@
 .card-custom:hover {
   transform: translateY(-5px);
 }
+
+section p {
+  text-indent: 1rem; /* Ajustá este valor si querés más o menos sangría */
+}
+
+/* Quitamos la sangría en elementos de interfaz donde no queda bien (tarjetas, footer, textos destacados) */
+.card-custom p,
+footer p,
+.lead,
+p.bg-white,
+.mensaje-animado p {
+  text-indent: 0;
+}
